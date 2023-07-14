@@ -7,6 +7,7 @@ specifiers:
   '@nestjs/platform-express': ^9.0.0
   '@nestjs/schematics': ^9.0.0
   '@nestjs/testing': ^9.0.0
+  '@prisma/client': 4.13.0
   '@types/bcrypt': ^5.0.0
   '@types/express': ^4.17.13
   '@types/jest': 29.5.0
@@ -20,6 +21,7 @@ specifiers:
   eslint-plugin-prettier: ^4.0.0
   jest: 29.5.0
   prettier: ^2.3.2
+  prisma: ^5.0.0
   reflect-metadata: ^0.1.13
   rxjs: ^7.2.0
   source-map-support: ^0.5.20
@@ -34,6 +36,7 @@ dependencies:
   '@nestjs/common': 9.4.0_mnr6j2del53muneqly5h4y27ai
   '@nestjs/core': 9.4.0_qfvkcqqlilywzuwwu2xqitbr3m
   '@nestjs/platform-express': 9.4.0_gqkob5jndcfeb3wjw72wbdwyne
+  '@prisma/client': 4.13.0_prisma@5.0.0
   bcrypt: 5.1.0
   reflect-metadata: 0.1.13
   rxjs: 7.8.0
@@ -54,6 +57,7 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_mrzcadguhkbme6yx3ehduvsjxu
   jest: 29.5.0_rrli7kzx2akox3oq6aahu3rvje
   prettier: 2.8.7
+  prisma: 5.0.0
   source-map-support: 0.5.21
   supertest: 6.3.3
   ts-jest: 29.0.5_doipufordlnvh5g4adbwayvyvy
@@ -1065,6 +1069,28 @@ packages:
       node-fetch: 2.6.9
     transitivePeerDependencies:
       - encoding
+
+  /@prisma/client/4.13.0_prisma@5.0.0:
+    resolution: {integrity: sha512-YaiiICcRB2hatxsbnfB66uWXjcRw3jsZdlAVxmx0cFcTc/Ad/sKdHCcWSnqyDX47vAewkjRFwiLwrOUjswVvmA==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a
+      prisma: 5.0.0
+    dev: false
+
+  /@prisma/engines-version/4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a:
+    resolution: {integrity: sha512-fsQlbkhPJf08JOzKoyoD9atdUijuGBekwoOPZC3YOygXEml1MTtgXVpnUNchQlRSY82OQ6pSGQ9PxUe4arcSLQ==}
+    dev: false
+
+  /@prisma/engines/5.0.0:
+    resolution: {integrity: sha512-kyT/8fd0OpWmhAU5YnY7eP31brW1q1YrTGoblWrhQJDiN/1K+Z8S1kylcmtjqx5wsUGcP1HBWutayA/jtyt+sg==}
+    requiresBuild: true
 
   /@sinclair/typebox/0.25.24:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
@@ -4160,6 +4186,14 @@ packages:
       ansi-styles: 5.2.0
       react-is: 18.2.0
     dev: true
+
+  /prisma/5.0.0:
+    resolution: {integrity: sha512-KYWk83Fhi1FH59jSpavAYTt2eoMVW9YKgu8ci0kuUnt6Dup5Qy47pcB4/TLmiPAbhGrxxSz7gsSnJcCmkyPANA==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 5.0.0
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
